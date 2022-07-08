@@ -10,14 +10,14 @@ $(call inherit-product, device/realme/RMX1931/device.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Inherit some common Spark stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
-EXTRA_UDFPS_ANIMATIONS := true
-TARGET_SUPPORTS_QUICK_TAP := true
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+
 TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_USES_BLUR := true
+TARGET_GAPPS_ARCH := arm64
+TARGET_SUPPORTS_QUICK_TAP := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_RMX1931
+PRODUCT_NAME := aosp_RMX1931
 PRODUCT_DEVICE := RMX1931
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := realme X2 Pro
